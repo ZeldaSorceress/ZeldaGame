@@ -1,0 +1,10 @@
+.laud audio{
+    height: 100px;
+    width: 55%;
+    float: left;
+}
+.raud audio {
+    float: right;
+    height: 50px;
+    width: 45%;
+}
