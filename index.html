@@ -2,63 +2,55 @@
 <html lang="en">
 <head>
     <title>Galaxy's Zelda Game</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/navbar.css">
     <link rel="stylesheet" href="CSS/scrollbar.css">
-    <link rel="stylesheet" href="CSS/links.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/picture.css">
     <link rel="icon" href="RES/galaxycube.png" type="image/png" sizes="16x16">
 </head>
 <style>
     html,body {
-        background-color: black;
+        background-color: #363636;
         margin: 0%;
-        font-family: 'Press Start 2P', cursive;
+        text-align: center;
     }
-    #main {
-        padding: 16px;
-        margin-top: 40px;
-        color: white;
+    body {
+        margin-top: 65px;
     }
-    .about {
-        color: #2f9481;
-        text-shadow: 1px 1px 10px #2f9481;
-        margin: 50px;
-        padding: 5px;
+    .header h2{
+        width: 43%;
+        text-align: center;
+        line-height: 173px;
+        font-size: 26px;
+        text-shadow: 1px 1px 10px white;
     }
-    #img {
-        border-style: ridge;
-        border-color: #2f9481;
-        width: 400px;
-        box-shadow: 1px 1px 10px #2f9481;
+    .header h2:hover {
+        opacity: 0;
+        transition: 1.5s;
     }
 </style>
 <body>
 <!---Navbar--->
-    <div id="navbarmain">
-        <a href="">Home</a>
-        <div id="navbarmain-right">
-            <a href="https://www.youtube.com/channel/UCMBXmXg-IYKbzOlDGqnK9VA/featured" target="_blank">YouTube Channel</a>
-        </div>
+    <div id="navbar">
+        <img src="RES/galaxycube.png">
+        <a href="" style="float: left;">Galaxy GD</a>
+        <a href="index.html" style="float: right;background-color: #363636;color: white;"><i class="fa fa-home"></i> Home</a>
     </div>
 <!---End Navbar--->
 <!---Game--->
-    <div id="main">
-        <center>
-            <img src="RES/splash.png">
-        </center>
-        <section class="about">
-            <center>
-                <h1>About The Game</h1>
-                <br>
-                <a href="screenshots.html">Amazing Screenshots</a>
-                <br>
-                <a href="items.html">In-Game Items</a>
-                <br>
-                <a href="">Dungeon Guides</a>
-                <br>
-                <a href="">Characters</a>
-            </center>
-        </section>
+    <div class="main">
+        <div class="post" style="width: 45%;">
+            <div class="bgimg">
+                <img src="RES/screenshot1.png" alt="big image">
+            </div>
+            <div class="simg">
+                <img src="RES/screenshot2.png" alt="image">
+                <img src="" alt="image">
+            </div>
+            <div class="header">
+                <h2>In-Game Screenshots</h2>
+            </div>
+        </div>
     </div>
 <!---End Game--->
 </body>

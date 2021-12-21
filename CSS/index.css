@@ -1,0 +1,13 @@
+.post {
+    background-color: #262626;
+    width: 30%;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+.post h2 {
+    text-align: left;
+    margin-left: 50px;
+    color: white;
+    font-size: 16px;
+}
