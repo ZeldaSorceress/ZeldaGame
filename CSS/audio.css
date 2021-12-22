@@ -8,3 +8,20 @@
     height: 50px;
     width: 45%;
 }
+
+
+.audiolink {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    line-height: 70px;
+    opacity: 0.8;
+    line-break: auto;
+    width: 100%;
+    border: none;
+}
+.audiolink:hover {
+    opacity: 1;
+}
