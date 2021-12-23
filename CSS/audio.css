@@ -16,11 +16,10 @@
     text-decoration: none;
     background-color: black;
     color: white;
-    line-height: 70px;
     opacity: 0.8;
-    line-break: auto;
-    width: 100%;
+    width: 40%;
     border: none;
+    line-height: 40px;
 }
 .audiolink:hover {
     opacity: 1;
