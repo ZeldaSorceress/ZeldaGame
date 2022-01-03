@@ -11,3 +11,26 @@
     color: white;
     font-size: 16px;
 }
+
+
+.socialpost {
+    float: right;
+    padding: 10px;
+    margin-top: -200px;
+    text-decoration: none;
+}
+.socialpost a {
+    text-decoration: none;
+}
+.socialpost i:hover {
+    color: #8d8787;
+}
+.socialpost i {
+    font-size: 38px;
+    border-radius: 100%;
+    background-color: #262626;
+    padding: 15px;
+    display: block;
+    color: white;
+    outline: none;
+}
