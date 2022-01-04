@@ -14,16 +14,21 @@
 
 
 .socialpost {
-    float: right;
+    float: left;
     padding: 10px;
     margin-top: -200px;
     text-decoration: none;
+    width: 30%;
 }
 .socialpost a {
     text-decoration: none;
 }
 .socialpost i:hover {
-    color: #8d8787;
+    color: red;
+    width: 50%;
+    transition: 0.5s;
+    border-radius: 0%;
+    text-align: left;
 }
 .socialpost i {
     font-size: 38px;
@@ -33,4 +38,21 @@
     display: block;
     color: white;
     outline: none;
+    width: 10%;
+}
+.twitch i:hover {
+    color: rgb(111, 12, 141);
+}
+.github i:hover {
+    color: aliceblue;
+}
+
+
+span {
+    font-size: 20px;
+    padding: 5px;
+    display: none;
+}
+span:hover {
+    display: block;
 }

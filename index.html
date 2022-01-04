@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/picture.css">
     <link rel="stylesheet" href="CSS/audio.css">
+    <link rel="stylesheet" href="CSS/social.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="RES/galaxycube.png" type="image/png" sizes="16x16">
 </head>
 <style>
     html,body {
-        background-color: #363636;
         margin: 0%;
         text-align: center;
+        height: 100%;
     }
     body {
-        margin-top: 65px;
+        margin-top: 35px;
+        height: 100%;
+        background-size: cover;
+        overflow: hidden;
+        background-color: #363636;
     }
     .header h2{
         width: 43%;
@@ -33,11 +38,10 @@
 </style>
 <body>
 <!---Navbar--->
-    <div id="navbar">
-        <img src="RES/galaxycube.png">
-        <a href="" style="float: left;">Galaxy GD</a>
-        <a href="index.html" style="float: right;background-color: #363636;color: white;"><i class="fa fa-home"></i> Home</a>
-    </div>
+        <a onclick="openNav()" style="background-color: #262626; padding: 15px; color: white; cursor: pointer;">Navigate</a>
+        <br>
+        <br>
+        <br>
 <!---End Navbar--->
 <!---Game--->
     <div class="main">
@@ -53,37 +57,44 @@
                 <h2>In-Game Screenshots</h2>
             </div>
         </div>
-        <br>
-        <br>
-        <div class="post" style="width: 45%;">
-            <table style="width: 100%;">
-                <tr>
-                    <th>Dungeon Themes</th>
-                    <th>Ambience Themes</th>
-                </tr>
-                <tr>
-                    <td><audio controls src="RES/MP3/dungeon_idea.mp3"></audio></td>
-                    <td><audio controls src="RES/MP3/underwater_idea.mp3"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls src="RES/MP3/finaldungeon_idea.mp3"></audio></td>
-                    <td><audio controls src="RES/MP3/creepy forest_idea.mp3"></audio></td>
-                </tr>
-                <tr>
-                    <td><audio controls src="RES/MP3/watertemple_idea.mp3"></audio></td>
-                    <td><audio controls src="RES/MP3/overworld_idea.mp3"></audio></td>
-                </tr>
-            </table>
-        </div>
-        <div class="socialpost">
-            <a href="https://www.twitch.tv/galaxy_gd" target="_blank"><i class="fa fa-twitch"></i></a>
+
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="RES/galaxycube.png" style="width: 50px;">
             <br>
             <br>
-            <a href="https://www.youtube.com/channel/UCMBXmXg-IYKbzOlDGqnK9VA" target="_blank"><i class="fa fa-youtube"></i></a>
-        </div>
-        <br>
-        <br>
+            <a href="" style="text-align: center;margin-right: 30px;">Galaxy GD</a>
+            <br>
+            <br>
+            <a href="#"><i class="fa fa-twitch"></i> | Twitch</a>
+            <a href="#"><i class="fa fa-youtube-play"></i> | YouTube</a>
+            <a href="#"><i class="fa fa-github"></i> | GitHub</a>
+            <a href="#"><i class="fa fa-question-circle"></i> | Dungeon Guide</a>
+            <a href="#"><i class="fa fa-map"></i> | Adventure Guide</a>
+            <a href="#"><i class="fa fa-bug"></i> | Bug Report</a>
+          </div>
+          
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+          <div id="main">
+            ...
+          </div>
     </div>
 <!---End Game--->
 </body>
+<script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,1.2)";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "#363636";
+    }
+</script>
 </html>
