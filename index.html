@@ -18,45 +18,21 @@
         height: 100%;
     }
     body {
-        margin-top: 35px;
         height: 100%;
         background-size: cover;
         overflow: hidden;
         background-color: #363636;
     }
-    .header h2{
-        width: 43%;
-        text-align: center;
-        line-height: 173px;
-        font-size: 26px;
-        text-shadow: 1px 1px 10px white;
-    }
-    .header h2:hover {
-        opacity: 0;
-        transition: 1.5s;
-    }
 </style>
 <body>
 <!---Navbar--->
-        <a onclick="openNav()" style="background-color: #262626; padding: 15px; color: white; cursor: pointer;">Navigate</a>
+        <button onclick="openNav()" style="background-color: #262626; padding: 5px; color: white; cursor: pointer; float: left; width: 5%;"><i class="fa fa-navicon"></i></button>
         <br>
         <br>
         <br>
 <!---End Navbar--->
 <!---Game--->
     <div class="main">
-        <div class="post" style="width: 45%;">
-            <div class="bgimg">
-                <img src="RES/Screenshots/screenshot1.png" alt="big image">
-            </div>
-            <div class="simg">
-                <img src="RES/Screenshots/screenshot2.png" alt="image">
-                <img src="" alt="image">
-            </div>
-            <div class="header">
-                <h2>In-Game Screenshots</h2>
-            </div>
-        </div>
 
 
         <div id="mySidenav" class="sidenav">
@@ -64,37 +40,37 @@
             <img src="RES/galaxycube.png" style="width: 50px;">
             <br>
             <br>
-            <a href="" style="text-align: center;margin-right: 30px;">Galaxy GD</a>
+            <a href="#" style="text-align: center;margin-right: 30px;">Galaxy GD</a>
             <br>
             <br>
-            <a href="#"><i class="fa fa-twitch"></i> | Twitch</a>
-            <a href="#"><i class="fa fa-youtube-play"></i> | YouTube</a>
-            <a href="#"><i class="fa fa-github"></i> | GitHub</a>
-            <a href="#"><i class="fa fa-question-circle"></i> | Dungeon Guide</a>
-            <a href="#"><i class="fa fa-map"></i> | Adventure Guide</a>
-            <a href="#"><i class="fa fa-bug"></i> | Bug Report</a>
+            <a href="https://www.twitch.tv/galaxy_gd" target="_blank"><i class="fa fa-twitch"></i> | Twitch</a>
+            <a href="https://www.youtube.com/channel/UCMBXmXg-IYKbzOlDGqnK9VA" target="_blank"><i class="fa fa-youtube-play"></i> | YouTube</a>
+            <a href="https://github.com/Galaxy-GD/ZeldaGame" target="_blank"><i class="fa fa-github"></i> | GitHub</a>
+            <a href="#Dungeon Guide"><i class="fa fa-question-circle"></i> | Dungeon Guide</a>
+            <a href="#Item Guide"><i class="fa fa-map"></i> | Adventure Guide</a>
+            <a href="#" target="_blank"><i class="fa fa-bug"></i> | Bug Report</a>
           </div>
           
           <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
           <div id="main">
-            ...
+              <div class="adventure">
+                  <h2>Item Guide</h2>
+                  <table style="width: 100%;">
+                      <tr>
+                          <th>Red Candle</th>
+                          <th>Kokiri Sword</th>
+                          <th>Monster Medallion</th>
+                      </tr>
+                      <tr>
+                          <td><img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/37/TLoZ_Red_Candle_Sprite.png/revision/latest/scale-to-width-down/80?cb=20170806001942&format=original" width="50px"><br><p><strong>How to Obtain: </strong>Currently you can obtain the Red Candle <br>by just opening the game and going into the starting area.<br><br><strong>What does it do? </strong>Allows you to use a flame to burn down <br>trees & bushes to reveal secrets.</p></td>
+                          <td><img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/4f/TLoZ_Sword_Sprite.png/revision/latest/scale-to-width-down/70?cb=20170806042959&format=original" width="50px"><p><strong>How to Obtain: </strong>Currently you can obtain the Kokiri Sword by <br>entering the cave found in the starting area.<br><br><strong>What does it do? </strong>Allows you to damage enemies with minor damage.</p></td>
+                          <td><p><strong>How to Obtain: </strong>Currently you can obtain the Monster Medallion <br>by entering the starting area.</p></td>
+                      </tr>
+                  </table>
+              </div>
           </div>
     </div>
 <!---End Game--->
 </body>
-<script>
-    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "300px";
-        document.getElementById("main").style.marginLeft = "250px";
-        document.body.style.backgroundColor = "rgba(0,0,0,1.2)";
-    }
-
-    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-        document.body.style.backgroundColor = "#363636";
-    }
-</script>
+<script src="JS/sidenav.js"></script>
 </html>

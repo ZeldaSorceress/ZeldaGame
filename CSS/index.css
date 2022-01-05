@@ -1,18 +1,3 @@
-.post {
-    background-color: #262626;
-    width: 30%;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 10px;
-}
-.post h2 {
-    text-align: left;
-    margin-left: 50px;
-    color: white;
-    font-size: 16px;
-}
-
-
 .socialpost {
     float: left;
     padding: 10px;
@@ -55,4 +40,19 @@ span {
 }
 span:hover {
     display: block;
+}
+
+
+.adventure th,td,h2 {
+    color: white;
+}
+.adventure th {
+    padding: 10px;
+    border: none;
+    background-color: #262626;
+}
+.adventure td {
+    border: none;
+    background-color: #262626;
+    padding: 10px;
 }
