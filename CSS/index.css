@@ -43,16 +43,25 @@ span:hover {
 }
 
 
-.adventure th,td,h2 {
+.adventure td:hover {
     color: white;
+    background-color: #363636;
+    transition: 0.8s;
 }
 .adventure th {
     padding: 10px;
-    border: none;
-    background-color: #262626;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+    background-color: #363636;
+    box-shadow: 1px 1px 10px black;
+    color: white;
 }
 .adventure td {
-    border: none;
-    background-color: #262626;
+    background-color: black;
     padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+    box-shadow: 1px 1px 10px black;
 }
