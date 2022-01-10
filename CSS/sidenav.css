@@ -9,6 +9,8 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+    opacity: 0.8;
+    box-shadow: 1px 1px 10px black;
 }
 
 /* The navigation menu links */
@@ -19,12 +21,14 @@
     color: #818181;
     display: block;
     transition: 0.2s;
-    text-align: left;
+    text-align: center;
+    text-shadow: 1px 1px 10px #818181;
 }
   
   /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #f1f1f1;
+    text-shadow: 1px 1px 10px white;
 }
 
 /* Position and style the close button (top right corner) */
