@@ -1,0 +1,39 @@
+/* Style tab links */
+.tablink {
+    background-color: #363636;
+    color: white;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 16px;
+    font-size: 15px;
+    width: 25%;
+    border: none;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    border-radius: 10px;
+    border-color: red;
+    border-style: solid;
+    box-shadow: 1px 1px 10px black;
+}
+
+#Home {background-color: black;}
+#News {background-color: black;}
+#Contact {background-color: black;}
+#About {background-color: black;}
+
+.box {
+    margin: 300px;
+    padding-top: 10px;
+    margin-top: -10px;
+}
