@@ -1,67 +1,10 @@
-.socialpost {
-    float: left;
-    padding: 10px;
-    margin-top: -200px;
-    text-decoration: none;
-    width: 30%;
-}
-.socialpost a {
-    text-decoration: none;
-}
-.socialpost i:hover {
-    color: red;
-    width: 50%;
-    transition: 0.5s;
-    border-radius: 0%;
-    text-align: left;
-}
-.socialpost i {
-    font-size: 38px;
-    border-radius: 100%;
-    background-color: #262626;
-    padding: 15px;
-    display: block;
-    color: white;
-    outline: none;
-    width: 10%;
-}
-.twitch i:hover {
-    color: rgb(111, 12, 141);
-}
-.github i:hover {
-    color: aliceblue;
-}
-
-
-span {
-    font-size: 20px;
-    padding: 5px;
-    display: none;
-}
-span:hover {
-    display: block;
-}
-
-
-.adventure td:hover {
-    color: white;
-    background-color: #363636;
-    transition: 0.8s;
-}
-.adventure th {
-    padding: 10px;
+.itemdisplay th,td {
+    padding: 20px;
+    border-color: darkgoldenrod;
     border-style: solid;
-    border-color: black;
-    border-width: 0.5px;
-    background-color: #363636;
-    box-shadow: 1px 1px 10px black;
-    color: white;
+    background-image: linear-gradient(black, black, black, darkgoldenrod);
+    color: gold;
 }
-.adventure td {
-    background-color: black;
-    padding: 10px;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.5px;
-    box-shadow: 1px 1px 10px black;
+.itemdisplay table {
+    width: 100%;
 }
