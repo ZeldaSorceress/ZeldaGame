@@ -8,3 +8,23 @@
 .itemdisplay table {
     width: 100%;
 }
+
+
+
+.plans table{
+    width: 100%;
+}
+.plans th,td {
+    padding: 30px;
+    border-color: darkgoldenrod;
+    border-style: solid;
+    color: gold;
+    text-shadow: 1px 1px 50px lime;
+}
+.plans th {
+    font-size: 24px;
+    background-color: #161616;
+}
+.plans td {
+    background-color: gray;
+}
