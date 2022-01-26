@@ -50,9 +50,20 @@
           <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
           <div id="main">
             <div class="box">
-                <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Items</button>
+                <button class="tablink" onclick="openPage('About', this, 'red')" id="defaultOpen">Landing Page</button>
+                <button class="tablink" onclick="openPage('Home', this, 'red')">Items</button>
                 <button class="tablink" onclick="openPage('Contact', this, 'red')">Dungeon Guide</button>
-        
+                
+                <div id="About" class="tabcontent">
+                    <div class="heading">
+                        <h3>Landing Page</h3>
+                        <p style="float: right;">Click on a tab to see information on the game!<br><br></p>
+                        <p style="float: left;">If the information cannot be found here, please <br>be patient as this game is still being made.</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
                 <div id="Home" class="tabcontent">
                     <div class="heading">
                         <h3>Item List</h3>
@@ -74,7 +85,7 @@
                         </table>
                     </div>
                 </div>
-        
+
                 <div id="News" class="tabcontent">
                     <h3>Dungeon Guide</h3>
                 </div>
@@ -83,11 +94,6 @@
                     <div class="heading">
                         <h3>Dungeon Guide</h3>
                     </div>
-                </div>
-        
-                <div id="About" class="tabcontent">
-                    <h3>About</h3>
-                    <p>Who we are and what we do.</p>
                 </div>
             </div>
           </div>
